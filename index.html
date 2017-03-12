@@ -8,294 +8,460 @@
     <link rel="stylesheet" href="master.scss">
 
     <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title>Sitecast</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".department-navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Mod_It</a>
-      </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <title>Sitecast</title>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".department-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Mod_It</a>
+    </div>
 
+    <div class="collapse navbar-collapse department-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown department-dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Departments<span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
 
-      <div class="collapse navbar-collapse department-navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="dropdown mega-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Departments<span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
-
-            <ul class="dropdown-menu mega-dropdown-menu row">
-              <li class="col-sm-3">
-                <ul>
-                  <li class="dropdown-header">New</li>
-                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <a href="#"><img src="http://placehold.it/254x150" class="img-responsive" alt="the power"></a>
-                        <h4><small>Put the power in your hands</small></h4>
-                        <button class="btn btn-primary" type="button">$49.00</button>
-                        <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Save</button>
-                      </div>
-                      <!-- End Item -->
-                      <div class="item">
-                        <a href="#"><img src="http://placehold.it/254x150" class="img-responsive" alt="product 2"></a>
-                        <h4><small>The afforable AMD Ryzen!</small></h4>
-                        <button class="btn btn-primary" type="button">$100 - $700</button>
-                        <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Save</button>
-                      </div>
-                      <!-- End Item -->
-                      <div class="item">
-                        <a href="#"><img src="http://placehold.it/254x150" class="img-responsive" alt="product 3"></a>
-                        <h4><small>Gaming Keyboard</small></h4>
-                        <button class="btn btn-primary" type="button">$99.99</button>
-                        <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Save</button>
-                      </div>
+          <ul class="dropdown-menu department-dropdown-menu row">
+            <li class="col-sm-3">
+              <ul>
+                <li class="dropdown-header">New</li>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <a href="#"><img src="http://placehold.it/254x150" class="img-responsive" alt="the power"></a>
+                      <h4><small>Put the power in your hands</small></h4>
+                      <button class="btn btn-primary" type="button">$49.00</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Save</button>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                      <a href="#"><img src="http://placehold.it/254x150" class="img-responsive" alt="product 2"></a>
+                      <h4><small>The afforable AMD Ryzen!</small></h4>
+                      <button class="btn btn-primary" type="button">$100 - $700</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Save</button>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                      <a href="#"><img src="http://placehold.it/254x150" class="img-responsive" alt="product 3"></a>
+                      <h4><small>Gaming Keyboard</small></h4>
+                      <button class="btn btn-primary" type="button">$99.99</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Save</button>
                     </div>
                   </div>
-                  <li class="divider"></li>
-                  <li><a href="#">View all New<span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
-                </ul>
-              </li>
-              <li class="col-sm-3">
-                <ul>
-                  <li class="dropdown-header">Chairs</li>
-                  <li><a href="#">Gaming</a></li>
-                  <li><a href="#">Office</a></li>
-                  <li><a href="#">Round Swivel</a></li>
-                  <li><a href="#">Conference</a></li>
-                  <li><a href="#">Ergonomic</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Desks</li>
-                  <li><a href="#">Sit-Stand</a></li>
-                  <li><a href="#">Computer Desk</a></li>
-                </ul>
-              </li>
-              <li class="col-sm-3">
-                <ul>
-                  <li class="dropdown-header">Keyboards</li>
-                  <li><a href="#">Apple</a></li>
-                  <li><a href="#">Microsoft</a></li>
-                  <li><a href="#">Ergonomic</a></li>
-                  <li><a href="#">Gaming</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Mice</li>
-                  <li><a href="#">Apple</a></li>
-                  <li><a href="#">Microsoft</a></li>
-                  <li><a href="#">Ergonomic</a></li>
-                  <li><a href="#">Gaming</a></li>
-                </ul>
-              </li>
-              <li class="col-sm-3">
-                <ul>
-                  <li class="dropdown-header">Accessories</li>
-                  <li><a href="#">Office</a></li>
-                  <li><a href="#">Gaming</a></li>
-                  <li><a href="#">Home</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Weekly Deals</li>
-                  <form class="form" role="form">
-                    <div class="form-group">
-                      <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <li class="divider"></li>
+                <li><a href="#">View all New<span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3">
+              <ul>
+                <li class="dropdown-header">Chairs</li>
+                <li><a href="#">Gaming</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Round Swivel</a></li>
+                <li><a href="#">Conference</a></li>
+                <li><a href="#">Ergonomic</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Desks</li>
+                <li><a href="#">Sit-Stand</a></li>
+                <li><a href="#">Computer Desk</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3">
+              <ul>
+                <li class="dropdown-header">Keyboards</li>
+                <li><a href="#">Apple</a></li>
+                <li><a href="#">Microsoft</a></li>
+                <li><a href="#">Ergonomic</a></li>
+                <li><a href="#">Gaming</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Mice</li>
+                <li><a href="#">Apple</a></li>
+                <li><a href="#">Microsoft</a></li>
+                <li><a href="#">Ergonomic</a></li>
+                <li><a href="#">Gaming</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3">
+              <ul>
+                <li class="dropdown-header">Accessories</li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Gaming</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Weekly Deals</li>
+                <form class="form" role="form">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+                </form>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="col-sm-5 col-sm-offset-3">
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+      <div class="col-sm-2">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown"><b>Login</b><span class="glyphicon glyphicon-chevron-down"></a>
+            <ul id="login-dp" class="dropdown-menu">
+              <li>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-center">Login via</p>
+                    <div class="social-buttons">
+                      <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                      <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Sign up</button>
-                  </form>
-                </ul>
+                    <p class="text-center">or</p>
+                    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8">
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail2" placeholder="Email address" required>
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword2">Password</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password" required>
+                        <div class="text-right"><a href="#">Forget the password ?</a></div>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox"> keep me logged-in</label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="text-center">
+                    <p>New here ? <a href="#"><b>Join Us</b></a></p>
+                  </div>
+                </div>
               </li>
             </ul>
           </li>
         </ul>
-        <div class="col-sm-5 col-sm-offset-3">
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-        </div>
       </div>
-    </nav>
-    <!-- first panel -->
-    <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-1">
-            <div class="content">
-              <div class="pull-middle">
-                <h1 class="page-header">We are on the App Store!</h1>
-                <p class="lead">Get it today</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-md-offset-1 text-center mt-100 mb-100">
-            <div class="phone">
-              <img class="img-responsive img-rounded" src="http://placehold.it/263x480">
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- second panel -->
+    </div>
+  </nav>
+  <!-- first panel -->
+  <header class="header">
     <div class="container">
       <div class="row">
-        <div class="col-md-5 col-md-offset-1 text-center mt-200">
-            <img class="img-responsive" src="http://placehold.it/480x480">
-        </div>
         <div class="col-md-5 col-md-offset-1">
           <div class="content">
             <div class="pull-middle">
-              <h2 class="h1 page-header">What's great about us?</h2>
-              <ul class="media-list">
-                <li class="media"><a class="media-left" href="#"><span class="glyphicon glyphicon-road icon text-success"></span></a>
-                  <div class="media-body">
-                    <h3 class="media-heading">We see the golden path</h3>
-                    <p>We make the user's experience satisfying.</p>
-                  </div>
-                </li>
-                <li class="media">
-                  <a class="media-left" href="#"><span class="glyphicon glyphicon-lock icon text-success"></span></a>
-                  <div class="media-body">
-                    <h3 class="media-heading">Encrypted Database</h3><br>
-                  </div>
-                </li>
-                <li class="media">
-                  <a class="media-left" href="#"><span class="glyphicon glyphicon-user icon text-success"></span></a>
-                  <div class="media-body">
-                    <h3 class="media-heading">Get real reviews</h3><br>
-                  </div>
-                </li>
-              </ul>
+              <h1 class="page-header">We are on the App Store!</h1>
+              <p class="lead">Get it today</p>
             </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-offset-1 text-center mt-100 mb-100">
+          <div class="phone">
+            <img class="img-responsive img-rounded" src="http://placehold.it/263x480">
           </div>
         </div>
       </div>
     </div>
-    <!-- third panel -->
-    <div class="content-wrapper">
-  		<div class="item-container">
-  			<div class="container">
-  				<div class="col-md-12">
-  					<div class="product col-md-3 service-image-left">
-  						<center>
-  							<img id="item-display" src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png" alt=""></img>
-  						</center>
-  					</div>
-
-  					<div class="container service1-items col-sm-2 col-md-2 pull-left">
-  						<center>
-  							<a id="item-1" class="service1-item">
-  								<img src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png" alt=""></img>
-  							</a>
-  							<a id="item-2" class="service1-item">
-  								<img src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png" alt=""></img>
-  							</a>
-  							<a id="item-3" class="service1-item">
-  								<img src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png" alt=""></img>
-  							</a>
-  						</center>
-  					</div>
-  				</div>
-
-  				<div class="col-md-7">
-  					<div class="product-title">Corsair GS600 600 Watt PSU</div>
-  					<div class="product-desc">The Corsair Gaming Series GS600 is the ideal price/performance choice for mid-spec gaming PC</div>
-  					<div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div>
-  					<hr>
-  					<div class="product-price">$ 234.00</div>
-  					<div class="product-stock">In Stock</div>
-  					<hr>
-            <button type="button" class="btn btn-success">Add to cart</button>
-						<button type="button" class="btn btn-danger">Add to wishlist</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container-fluid">
-			<div class="col-md-12 product-info">
-  			<ul id="myTab" class="nav nav-tabs nav_tabs">
-  				<li class="active"><a href="#first-panel-product" data-toggle="tab">Description</a></li>
-  				<li><a href="#second-panel-product" data-toggle="tab">Product Info</a></li>
-  				<li><a href="#third-panel-product" data-toggle="tab">Reviews</a></li>
-  			</ul>
-				<div id="myTabContent" class="tab-content">
-					<div class="tab-pane fade in active" id="first-panel-product">
-						<div class="container product-info">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada felis vitae interdum lacinia. Integer a urna eget felis blandit volutpat nec non augue. Vestibulum egestas lectus vel nulla feugiat, ac ullamcorper odio fringilla. Fusce cursus ut ante in venenatis. Integer ac volutpat tellus. Nullam mattis suscipit cursus. Duis sagittis sed tellus et elementum. Praesent id neque vitae diam tristique auctor. Sed commodo dapibus purus id convallis. Nulla quam sem, ullamcorper id nisl sed, iaculis porttitor nulla.</p>
-
-							<h3>Corsair Gaming Series GS600 Features:</h3>
-							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis suscipit cursus. Duis sagittis sed tellus et elementum. Praesent id neque vitae diam tristique.</li>
-							<li>Nullam mattis suscipit cursus. Duis sagittis sed tellus et elementum. Proin malesuada felis vitae interdum lacinia. Integer a urna eget felis blandit augue.</li>
-							<li>Morbi vestibulum mollis mauris. Sed ultricies tristique dui, id fermentum lectus mattis at.</li>
-							<li>Pellentesque venenatis luctus ligula, id interdum massa gravida vitae. Phasellus venenatis accumsan ultrices. Phasellus nec aliquet risus.</li>
-							<li>Sed feugiat molestie lacus id blandit. Praesent efficitur hendrerit nibh non rutrum. Sed ac congue nulla.</li>
-              <br>
-              <br>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="second-panel-product">
-
-						<div class="container product-info">
-              <p>
-                Sed non orci a quam iaculis egestas ut sit amet purus. Donec efficitur enim eu semper dictum. Etiam ac dictum augue. Donec orci orci, iaculis nec rutrum nec, vehicula dapibus massa. Nullam sit amet est a tellus porttitor fermentum. Vestibulum turpis arcu, consequat eget dui non, placerat pretium augue. Aliquam non vehicula velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent ut ex aliquam, ultrices metus in, vehicula arcu. Aliquam nec viverra tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada felis vitae interdum lacinia. Integer a urna eget felis blandit volutpat nec non augue. Vestibulum egestas lectus vel nulla feugiat, ac ullamcorper odio fringilla. Fusce cursus ut ante in venenatis. Integer ac volutpat tellus. Nullam mattis suscipit cursus. Duis sagittis sed tellus et elementum. Praesent id neque vitae diam tristique auctor. Sed commodo dapibus purus id convallis. Nulla quam sem, ullamcorper id nisl sed, iaculis porttitor nulla. Etiam placerat magna et ante aliquet, non eleifend orci posuere. Donec non ultrices felis, quis sagittis risus. Integer euismod gravida faucibus. Donec pharetra pretium sapien, sed tempor quam. Fusce id mauris fringilla, blandit justo et, efficitur metus. Proin vestibulum fringilla elit, nec condimentum magna maximus sit amet. Aliquam id tellus egestas, varius dolor vel, ultrices nibh.
-              </p>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8lJ-j5Fy5SM"></iframe>
-              </div>
-              <br>
-              <br>
-
-
-
-						</div>
-
-					</div>
-					<div class="tab-pane fade" id="third-panel-product">
-            <br><br>
-            <div class="container row">
-              <div class="col-sm-1">
-                <div class="thumbnail">
-                  <img class="img-responsive" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+  </header>
+  <!-- second panel -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1 text-center mt-200">
+        <img class="img-responsive" src="http://placehold.it/480x480">
+      </div>
+      <div class="col-md-5 col-md-offset-1">
+        <div class="content">
+          <div class="pull-middle">
+            <h2 class="h1 page-header">What's great about us?</h2>
+            <ul class="media-list">
+              <li class="media"><a class="media-left" href="#"><span class="glyphicon glyphicon-road icon text-success"></span></a>
+                <div class="media-body">
+                  <h3 class="media-heading">We see the golden path</h3>
+                  <p>We make the user's experience satisfying.</p>
                 </div>
-              </div>
+              </li>
+              <li class="media">
+                <a class="media-left" href="#"><span class="glyphicon glyphicon-lock icon text-success"></span></a>
+                <div class="media-body">
+                  <h3 class="media-heading">Encrypted Database</h3><br>
+                </div>
+              </li>
+              <li class="media">
+                <a class="media-left" href="#"><span class="glyphicon glyphicon-user icon text-success"></span></a>
+                <div class="media-body">
+                  <h3 class="media-heading">Get real reviews</h3><br>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- third panel -->
+  <div class="content-wrapper">
+    <div class="item-container">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="product col-md-3 service-image-left">
+            <center>
+              <img id="item-display" src="https://images-na.ssl-images-amazon.com/images/I/91K9SyGiyzL._SL1500_.jpg" alt="monitor"></img>
+            </center>
+          </div>
 
-              <div class="col-sm-11">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <strong>Mr.Person</strong> <span class="text-muted">reviewed 1 day ago</span>
+          <div class="container service1-items col-sm-2 col-md-2 pull-left">
+            <center>
+              <a id="item-1" class="service1-item service1-item-pic">
+                <img src="https://i.ytimg.com/vi/POCOVsBT2s8/maxresdefault.jpg" alt="monitor"></img>
+              </a>
+              <a id="item-2" class="service1-item service1-item-pic">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/31hPrtIaYjL.jpg" alt="monitor"></img>
+              </a>
+              <a id="item-3" class="service1-item">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/41%2B8jWldf9L.jpg" alt="monitor"></img>
+              </a>
+            </center>
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="product-title">Lorem ipsum dolor sit amet</div>
+          <div class="product-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis suscipit cursus. Duis sagittis sed tellus et elementum. Praesent id neque vitae diam tristique auctor.</div>
+          <div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div>
+          <hr>
+          <div class="product-price">$ 234.00</div>
+          <div class="product-stock">In Stock</div>
+          <hr>
+          <button type="button" class="btn btn-success">Add to cart</button>
+          <button type="button" class="btn btn-danger">Add to wishlist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="col-md-12 product-info">
+      <ul id="myTab" class="nav nav-tabs nav_tabs">
+        <li class="active"><a href="#first-panel-product" data-toggle="tab">Description</a></li>
+        <li><a href="#second-panel-product" data-toggle="tab">Product Info</a></li>
+        <li><a href="#third-panel-product" data-toggle="tab">Reviews</a></li>
+        <li><a href="#fourth-panel-product" data-toggle="tab">Buy Now</a></li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="first-panel-product">
+          <div class="container product-info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada felis vitae interdum lacinia. Integer a urna eget felis blandit volutpat nec non augue. Vestibulum egestas lectus vel nulla feugiat, ac ullamcorper odio fringilla. Fusce cursus ut ante in venenatis. Integer ac volutpat tellus. Nullam mattis suscipit cursus. Duis sagittis sed tellus et elementum. Praesent id neque vitae diam tristique auctor. Sed commodo dapibus purus id convallis. Nulla quam sem, ullamcorper id nisl sed, iaculis porttitor nulla.</p>
+
+            <h3>Integer ac volutpat tellus Features:</h3>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis suscipit cursus. Duis sagittis sed tellus et elementum. Praesent id neque vitae diam tristique.</li>
+            <li>Nullam mattis suscipit cursus. Duis sagittis sed tellus et elementum. Proin malesuada felis vitae interdum lacinia. Integer a urna eget felis blandit augue.</li>
+            <li>Morbi vestibulum mollis mauris. Sed ultricies tristique dui, id fermentum lectus mattis at.</li>
+            <li>Pellentesque venenatis luctus ligula, id interdum massa gravida vitae. Phasellus venenatis accumsan ultrices. Phasellus nec aliquet risus.</li>
+            <li>Sed feugiat molestie lacus id blandit. Praesent efficitur hendrerit nibh non rutrum. Sed ac congue nulla.</li>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="second-panel-product">
+          <div class="container product-info">
+            <p>
+              Sed non orci a quam iaculis egestas ut sit amet purus. Donec efficitur enim eu semper dictum. Etiam ac dictum augue. Donec orci orci, iaculis nec rutrum nec, vehicula dapibus massa. Nullam sit amet est a tellus porttitor fermentum. Vestibulum turpis arcu, consequat eget dui non, placerat pretium augue. Aliquam non vehicula velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent ut ex aliquam, ultrices metus in, vehicula arcu. Aliquam nec viverra tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada felis vitae interdum lacinia. Integer a urna eget felis blandit volutpat nec non augue. Vestibulum egestas lectus vel nulla feugiat, ac ullamcorper odio fringilla. Fusce cursus ut ante in venenatis. Integer ac volutpat tellus. Nullam mattis suscipit cursus. Duis sagittis sed tellus et elementum. Praesent id neque vitae diam tristique auctor. Sed commodo dapibus purus id convallis. Nulla quam sem, ullamcorper id nisl sed, iaculis porttitor nulla. Etiam placerat magna et ante aliquet, non eleifend orci posuere. Donec non ultrices felis, quis sagittis risus. Integer euismod gravida faucibus. Donec pharetra pretium sapien, sed tempor quam. Fusce id mauris fringilla, blandit justo et, efficitur metus. Proin vestibulum fringilla elit, nec condimentum magna maximus sit amet. Aliquam id tellus egestas, varius dolor vel, ultrices nibh.
+            </p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z5q78YC2cJA"></iframe>
+            </div>
+            <br>
+            <br>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="third-panel-product">
+          <br><br>
+          <div class="container row">
+            <div class="col-sm-1">
+              <div class="thumbnail">
+                <img class="img-responsive" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+              </div>
+            </div>
+
+            <div class="col-sm-11">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <strong>Mr.Person</strong> <span class="text-muted">reviewed 1 day ago</span>
+                </div>
+                <div class="panel-body">Praesent ut ex aliquam, ultrices metus in, vehicula arcu. Aliquam nec viverra tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada felis vitae interdum lacinia.</div>
+              </div>
+            </div>
+
+            <div class="col-sm-1">
+              <div class="thumbnail">
+                <img class="img-responsive" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+              </div>
+            </div>
+
+            <div class="col-sm-11">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <strong>Someone</strong> <span class="text-muted">reviewed 5 days ago</span>
+                </div>
+                <div class="panel-body">Iaculis porttitor nulla. Etiam placerat magna et ante aliquet, non eleifend orci posuere. Donec non ultrices felis, quis sagittis risus. Integer euismod gravida faucibus. Donec pharetra pretium sapien, sed tempor quam. Fusce id mauris fringilla, blandit justo et, efficitur metus. Proin vestibulum fringilla elit, nec condimentum magna maximus sit amet. Aliquam id tellus egestas, varius dolor vel, ultrices nibh.</div>
+              </div>
+            </div>
+          </div><!-- /row -->
+        </div> <!-- third tab -->
+
+        <div class="tab-pane fade" id="fourth-panel-product">
+          <br><br>
+          <div class="col-md-10 col-sm-offset-1">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="row ">
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" placeholder="Enter Card Number">
                   </div>
-                  <div class="panel-body">Praesent ut ex aliquam, ultrices metus in, vehicula arcu. Aliquam nec viverra tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada felis vitae interdum lacinia.</div>
+                  <br>
                 </div>
-              </div>
-
-              <div class="col-sm-1">
-                <div class="thumbnail">
-                  <img class="img-responsive" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
-                </div>
-              </div>
-
-              <div class="col-sm-11">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <strong>Someone</strong> <span class="text-muted">reviewed 5 days ago</span>
+                <div class="row ">
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <span class="text-muted">Expiry Month</span>
+                    <input type="text" class="form-control" placeholder="MM">
                   </div>
-                  <div class="panel-body">Iaculis porttitor nulla. Etiam placerat magna et ante aliquet, non eleifend orci posuere. Donec non ultrices felis, quis sagittis risus. Integer euismod gravida faucibus. Donec pharetra pretium sapien, sed tempor quam. Fusce id mauris fringilla, blandit justo et, efficitur metus. Proin vestibulum fringilla elit, nec condimentum magna maximus sit amet. Aliquam id tellus egestas, varius dolor vel, ultrices nibh.</div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <span class="text-muted">Expiry Year</span>
+                    <input type="text" class="form-control" placeholder="YYYY">
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <span class="text-muted">CCV</span>
+                    <input type="text" class="form-control" placeholder="CCV">
+                  </div>
                 </div>
-              </div>
+                <br>
+                <div class="row ">
+                  <div class="col-md-12 pad-adjust">
+                    <input type="text" class="form-control" placeholder="Name On The Card">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 pad-adjust">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" class="text-muted"><p>Save Details?</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                    <button type="button" class="btn btn-danger btn-block" name="button">Cancel</button>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                    <button type="button" class="btn btn-success btn-block">Buy</button>
+                  </div>
+                </div>
+              </div> <!-- panel-heading -->
+            </div><!-- panel panel-default -->
+          </div> <!-- column -->
+        </div><!-- tab-pane fade -->
+      </div> <!-- tab-content -->
+    </div> <!-- product-info -->
+  </div> <!-- container-fluid -->
+  <br>
+  <br>
+  <!-- fifth-panel -->
+  <div class="container">
+    <h1 class="text-center">Get the our best value bundle!</h1>
+    <div class="col-md-5 text-center ml-80">
+      <img class="img-responsive" src="http://placehold.it/480x480">
+    </div>
+    <div class="col-xs-10 col-sm-12 col-md-6">
+      <table class="table table-hover text-center">
+        <thead>
+          <tr>
+            <th>Packages</th>
+            <th>Basic</th>
+            <th>Plus <small class="small-font"> Standard</small></th>
+            <th>Premium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 TB Hard Disk</td>
+            <td><i class="glyphicon glyphicon-remove"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+          </tr>
+          <tr>
+            <td>18 GB Ram</td>
+            <td>N/A (12 GB)</td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+          </tr>
+          <tr>
+            <td>DDR4  </td>
+            <td><i class="glyphicon glyphicon-remove"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+          </tr>
+          <tr>
+            <td>i7 6700k</td>
+            <td><i class="glyphicon glyphicon-remove"></i></td>
+            <td><i class="glyphicon glyphicon-remove"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+          </tr>
+          <tr>
+            <td>EVGA GeForce GTX 1080</td>
+            <td>EVGA GeForce GTX 1050</td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+            <td>EVGA GeForce GTX 1080 iT</td>
+          </tr>
+          <tr>
+            <td>120 GB SSD</td>
+            <td><i class="glyphicon glyphicon-remove"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+          </tr>
+          <tr>
+            <td>750W Gaming 120MM Fan Silent ATX Power Supply PSU</td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+          </tr>
+          <tr>
+            <td>Mouse, Keyboard, LED lighting</td>
+            <td><i class="glyphicon glyphicon-remove"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+            <td><i class="glyphicon glyphicon-ok"></i></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href="#" class="btn btn-primary">Buy Basic</a> </td>
+            <td><a href="#" class="btn btn-warning">Buy Standard</a> </td>
+            <td><a href="#" class="btn btn-danger">Buy Premium</a> </td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- column -->
+  </div><!-- container -->
 
-            </div><!-- /row -->
-          </div> <!-- third tab -->
-        </div> <!-- tab-content -->
-			</div> <!-- product-info -->
-		</div> <!-- container-fluid -->
-    
-  </body>
+</body>
 </html>

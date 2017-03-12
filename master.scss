@@ -13,23 +13,23 @@
   font-weight: bold;
 }
 
-.mega-dropdown {
+.department-dropdown {
   position: static !important;
   width: 100%;
 }
 
-.mega-dropdown-menu {
+.department-dropdown-menu {
   padding: 20px 0px;
   width: 100%;
   box-shadow: none;
   -webkit-box-shadow: none;
 }
 
-.mega-dropdown-menu > li > ul > li {
+.department-dropdown-menu > li > ul > li {
   list-style: none;
 }
 
-.mega-dropdown-menu > li > ul > li > a {
+.department-dropdown-menu > li > ul > li > a {
   display: block;
   padding: 3px 20px;
   clear: both;
@@ -39,25 +39,54 @@
   white-space: normal;
 }
 
-.mega-dropdown-menu > li ul > li > a:hover,
-.mega-dropdown-menu > li ul > li > a:focus {
+.department-dropdown-menu > li ul > li > a:hover,
+.department-dropdown-menu > li ul > li > a:focus {
   text-decoration: none;
   color: #444;
   background-color: #f5f5f5;
 }
 
-.mega-dropdown-menu .dropdown-header {
-  color: #428bca;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.mega-dropdown-menu form {
-  margin: 3px 20px;
-}
-
-.mega-dropdown-menu .form-group {
+.department-dropdown-menu .form-group {
   margin-bottom: 3px;
+  form {
+    margin: 3px 20px;
+  }
+  .dropdown-header {
+    color: #428bca;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+#login-dp{
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color: white;
+}
+
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+    width: 49% !important;
+}
+
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+    width: 49% !important;
+}
+
+
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
 }
 
 .mt-100 {
@@ -70,6 +99,10 @@
 
 .mb-100 {
     margin-bottom: 100px;
+}
+
+.ml-80 {
+  margin-left: 80px !important;
 }
 
 .icon {
@@ -109,9 +142,6 @@
     box-shadow: 20px 20px 40px #887;
 }
 
-
-
-
 .product{
 	border: 1px solid #dddddd;
 	height: 321px;
@@ -146,7 +176,6 @@
 .product-info{
 		margin-top: 50px;
 }
-
 
 .content-wrapper {
 	max-width: 1140px;
@@ -201,13 +230,17 @@
 	opacity: 0.6;
 }
 
+.service1-item-pic > img{
+  margin-top: 12px !important;
+}
+
 .service1-item > img:hover {
 	cursor: pointer;
 	opacity: 1;
 }
 
 .service-image-left {
-	padding-right: 50px;
+  padding-top: 40px;
 }
 
 .service-image-right {
@@ -224,4 +257,8 @@
 
 .panel {
 	position:relative;
+}
+
+.small-font {
+  font-size: 9px;
 }
